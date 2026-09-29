@@ -25,7 +25,7 @@ namespace System_Pro_Ev_Tapsirigi2
                         case "1":
                             if (!isplay1)
                             {
-                                var tarkan = Process.Start("\"C:\\Program Files\\MPC-HC\\mpc-hc64.exe\"", "\"C:\\Users\\arzum\\Desktop\\TARKAN feat. OZAN ÇOLAKOĞLU - Aşk Gitti Bizden (Official Music Video)(MP3_160K).mp3\"");
+                                var tarkan = Process.Start("\"C:\\Program Files\\MPC-HC\\mpc-hc64.exe\"", "\"C:\\Users\\arzum\\Desktop\\C#\\System Pro Ev Tapsirigi2\\System Pro Ev Tapsirigi2\\TARKAN feat. OZAN ÇOLAKOĞLU - Aşk Gitti Bizden (Official Music Video)(MP3_160K).mp3\"");
                                 process1 = tarkan;
                                 isplay1 = true;
                             }
@@ -57,7 +57,7 @@ namespace System_Pro_Ev_Tapsirigi2
                         case "2":
                             if (!isplay2)
                             {
-                                var senorita = Process.Start("\"C:\\Program Files\\MPC-HC\\mpc-hc64.exe\"", "\"C:\\Users\\arzum\\Desktop\\Senorita.mp4\"");
+                                var senorita = Process.Start("\"C:\\Program Files\\MPC-HC\\mpc-hc64.exe\"", "\"C:\\Users\\arzum\\Desktop\\C#\\System Pro Ev Tapsirigi2\\System Pro Ev Tapsirigi2\\Senorita.mp4\"");
                                 process2 = senorita;
                                 isplay2 = true;
                             }
@@ -106,7 +106,7 @@ namespace System_Pro_Ev_Tapsirigi2
 
             while (true)
             {
-                Console.WriteLine("1.Tarkan-Ask gitdi bizden\n2.Shawn Mendes-Senorita\n3.Tarkan stop music\n4.Shawn stop music");
+                Console.WriteLine("1.Tarkan-Ask gitdi bizden\n2.Shawn Mendes-Senorita\n3.Tarkan stop music\n4.Shawn stop music\n0.Stop all music and program");
                 choice = Console.ReadLine();
 
                 if (choice == "0") { Thread.Sleep(2000); break; }
